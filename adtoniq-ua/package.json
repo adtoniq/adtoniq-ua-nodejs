@@ -1,0 +1,74 @@
+{
+  "_from": "adtoniq-ua@^1.0",
+  "_id": "adtoniq-ua@1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-XEOuvfH5+OA1mP50gsKzCV3CBf4K8ZCJ+M6wTHaK6XDYSHkR9aNZByifyQM2CUEPX9HMMvhL9fb39tF9mgkJaw==",
+  "_location": "/adtoniq-ua",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "adtoniq-ua@^1.0",
+    "name": "adtoniq-ua",
+    "escapedName": "adtoniq-ua",
+    "rawSpec": "^1.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/adtoniq-ua/-/adtoniq-ua-1.0.tgz",
+  "_shasum": "7b94d40034a393973479205cab8e61434bf1a58f",
+  "_spec": "adtoniq-ua@^1.0",
+  "_where": "/Users/benny/adtoniq/adtoniq-for-nodejs/examples/ua",
+  "author": {
+    "name": "Adtoniq",
+    "url": "http://adtoniq.com"
+  },
+  "bundleDependencies": false,
+  "contributors": [],
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  },
+  "deprecated": false,
+  "description": "Connects your JavaScript based website with Adtoniq Cloud services",
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "files": [
+    "README.md",
+    "index.js"
+  ],
+  "homepage": "https://github.com/adtoniq/adtoniq-for-nodejs#readme",
+  "keywords": [
+    "adblock, adblocker, ad blocker, ad block, ad blocking, blocker, advertisement, ad"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "adtoniq-ua",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adtoniq/adtoniq-for-nodejs.git"
+  },
+  "scripts": {},
+  "version": "1.0",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 12.0.0"
+      },
+      "pkgid": "adtoniq-ua@1.0"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 12.0.0"
+      },
+      "pkgid": "adtoniq-ua@1.0"
+    }
+  ]
+}
