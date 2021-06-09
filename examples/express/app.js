@@ -34,7 +34,7 @@ var fs = require('fs');
 // ---------------------------
 const AdtoniqUA = require("adtoniq-ua")
 const auaPollInterval = 10000 // mseconds
-const auaURL = "https://d1hwfp4apoj7bu.cloudfront.net/c/z-zyo372002-ngrok-io.html"
+const auaURL = "https://d1hwfp4apoj7bu.cloudfront.net/c/zzz.html"
 
 const adtoniqUA = new AdtoniqUA(auaURL, auaPollInterval);
 
@@ -47,11 +47,9 @@ app.get('/', function(req, res) {
 
 // Example using jade
 app.get('/jadedemo', function(req, res) {
-  adtoniq.getHeadCode({}, (headCode) => {
-    const data = getDemoData(headCode)
-    // Render using jade template 'views/demo.jade'
-    res.render('demo', data)
-  })
+  const data = getDemoData(adtoniqUA.getHeadCode())
+  // Render using jade template 'views/demo.jade'
+  res.render('demo', data)
 })
 
 

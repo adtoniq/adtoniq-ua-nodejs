@@ -19,7 +19,7 @@ const auaURL = "Your-URL-Here"
 const auaPollInterval = 10000 // mseconds
 ```
 
-### Initialize the API with your key. ###
+### Initialize the API with your settings. ###
 ```js
 const adtoniqUA = new AdtoniqUA(auaURL, auaPollInterval)
 ```
@@ -29,7 +29,7 @@ You must insert a piece of code on every header of a request that page. You shou
 const headCode = adtoniqUA.getHeadCode()
 ```
 ### Details
-For details and examples visit https://github.com/adtoniq/adtoniq-for-nodejs
+For details and examples visit https://github.com/adtoniq/adtoniq-ua-nodejs
 
 
 ### License
