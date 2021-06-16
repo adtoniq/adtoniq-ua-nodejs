@@ -1,9 +1,9 @@
 # README #
 This is a Node.js project demonstrating how to integrate [Adtoniq](https://adtoniq.io) with your Node.js based web server.
 
-Adtoniq for Node.js implements the server-to-server communications required between your webserver and Adtoniq. Once a day Adtoniq will initiate communications with your webserver, using a secure protocol, to transmit the latest JavaScript required to ensure Adtoniq continues functioning as new ad block rules are added, or ad blockers are enhanced with new capabilities. In addition, once you are live with Adtoniq, Adtoniq will monitor your website to determine if ad blockers are adding new filter list rules specifically to block ads on your website, and if they are, Adtoniq will immediately send your site an update to ensure your advertising is not blocked. These updates sent by Adtoniq are cached between updates from Adtoniq - you can read more about caching below.
+Adtoniq Universal Adapater for Node.js implements the integration between your webserver and Adtoniq. Your server will periodically poll Adtoniq servers for updated Adtoniq code, which is cached in memory and then injected into the head of your pages. This ensures that Adtoniq continues functioning as new ad block rules are added, or ad blockers are enhanced with new capabilities.
 
-By default, Adtoniq's servers will communicate with your website using the root of your website over https, for example https://www.mysite.com/. You can customize this URL to be any URL you like, for example https://www.mysite.com/adtoniq. To customize your update URL, contact adtoniq at support@adtoniq.com and request a custom update URL.
+In addition, once you are live with Adtoniq, Adtoniq will monitor your website to determine if ad blockers are adding new capabilities specifically designed to block ads on your website, and if they are, Adtoniq will immediately prepare new code for your site to be picked up during the next poll cycle, to ensure your advertising is not blocked.
 
 ## Guide to what's here ##
 
