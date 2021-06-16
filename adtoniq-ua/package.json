@@ -1,6 +1,6 @@
 {
   "name": "adtoniq-ua",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connects your JavaScript based website with Adtoniq Cloud services",
   "main": "index.js",
   "scripts": {

@@ -12,13 +12,15 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
  */
 module.exports = class AdtoniqUA {
 	
-	javaScript = "";
-	version = "v1.0";
+//	var javaScript = "";
+//	var version = "v1.0";
 
 	/** Construct the Adtoniq singleton and initialize it
 	 * @param apiKey Your unique API key, obtained from Adtoniq when you register
 	 */
 	constructor(pollURL, pollInterval) {
+	this.javaScript = "";
+	this.version = "v1.0";
     this.pollURL = pollURL
     this.pollInterval = pollInterval ? pollInterval : 30000
     if (!!AdtoniqUA.instance) {

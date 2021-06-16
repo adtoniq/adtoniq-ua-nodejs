@@ -34,7 +34,7 @@ var fs = require('fs');
 // ---------------------------
 const AdtoniqUA = require("adtoniq-ua")
 const auaPollInterval = 10000 // mseconds
-const auaURL = "https://d1hwfp4apoj7bu.cloudfront.net/c/zzz.html"
+const auaURL = "https://static-42andpark-com.s3-us-west-2.amazonaws.com/c/z-nodejs-z-com.html"
 
 const adtoniqUA = new AdtoniqUA(auaURL, auaPollInterval);
 
