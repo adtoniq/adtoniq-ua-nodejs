@@ -31,7 +31,7 @@ const adtoniqUA = new AdtoniqUA(auaURL, auaPollInterval)
 ```
 
 ## Displaying other ads ##
-Adtoniq will target existing ads to be replced. If you want to add your own, the following snippet, included in body.html, illustrates how to do this. In this case Adtoniq support will generate the ads to be displayed in class="foo".
+Adtoniq will target existing ads to be replaced. If you want to add your own, the following snippet, included in body.html, illustrates how to do this. In this case Adtoniq support will generate the ads to be displayed in all divs with class="foo".
 ```html
 <p> Here is my ad
 <div class="foo" style="border: 1px solid red;">
