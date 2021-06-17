@@ -3,11 +3,13 @@ This is a simple [Express](https://expressjs.com) demo sever. The file app.js de
 
 ## Setup ##
 
-This demo depends on the [adtoniq-express module](https://www.npmjs.com/package/adtoniq-ua) which will be atomatically installed.
+This demo depends on the [adtoniq-ua module](https://www.npmjs.com/package/adtoniq-ua) which will be atomatically installed.
 ```bash
 npm install
 ```
-You will first need to get your site site registered and obtain your API URL. For that contact support@adtoniq.com.
+You will first need to get your site site registered and obtain an Adtoniq URL for your website. For that contact support@adtoniq.com.
+
+The URL included in this example is designed to match the minimal example in the body.html file, for the purpose of testing Adtoniq and to understand how it integrates with your website. To deploy this on a real website, you will need to replace example URL this with a URL you get from Adtoniq.
 
 ## The code ##
 
