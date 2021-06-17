@@ -7,7 +7,7 @@ In addition, once you are live with Adtoniq, Adtoniq will monitor your website t
 
 ## Guide to what's here ##
 
-The [adtoniq-express](https://github.com/adtoniq/adtoniq-ua-nodejs/tree/master/adtonic-express) repository contains the code to the [Adtonic npm module](https://www.npmjs.com/package/adtoniq-express).
+The [adtoniq-ua](https://github.com/adtoniq/adtoniq-ua-nodejs/tree/master/adtoniq-ua) repository contains the code to the [Adtonic universal adapter npm module](https://www.npmjs.com/package/adtoniq-ua).
 
 The [examples/express](https://github.com/adtoniq/adtoniq-ua-nodejs/tree/master/examples/express) repository contains a simple [Express](https://expressjs.com) sever that implements the Adtoniq functionality.
 
