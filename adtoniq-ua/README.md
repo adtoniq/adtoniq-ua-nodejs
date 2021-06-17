@@ -1,7 +1,7 @@
 ![](logo.png)
 
 # adtoniq-ua
-Adtoniq for Node.js implements the server-to-server communications required between your webserver and [Adtoniq](https://adtoniq.io).
+Adtoniq for Node.js implements the code required to use [Adtoniq](https://adtoniq.io) on your NodeJS website.
 
 ## Install
 
