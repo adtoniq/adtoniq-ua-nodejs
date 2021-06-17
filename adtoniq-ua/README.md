@@ -26,7 +26,7 @@ const AdtoniqUA = require("adtoniq-ua");
 const adtoniqUA = new AdtoniqUA(auaURL, auaPollInterval)
 ```
 ### Process requests ###
-You must insert a piece of Adtoniq code in the head of every page by calling the following:
+You must insert a piece of Adtoniq code in the head of every page. Get that code by calling:
 ```js
 adtoniqUA.getHeadCode()
 ```
