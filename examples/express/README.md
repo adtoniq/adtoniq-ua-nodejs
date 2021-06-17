@@ -1,5 +1,5 @@
 # README #
-This is a simple [Express](https://expressjs.com) demo sever. The file app.js demonstrates how to integrate Adtoniq. This sample page displays sample ads and displays whether you are using an ad blocker.
+This is a simple [Express](https://expressjs.com) demo sever. The file app.js demonstrates how to integrate Adtoniq. This sample page displays sample ads and displays whether you are using an ad blocker. Try viewing this example with and without an ad blocker.
 
 ## Setup ##
 
