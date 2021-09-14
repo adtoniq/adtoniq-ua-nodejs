@@ -11,51 +11,46 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
  * @public
  */
 module.exports = class AdtoniqUA {
-	
-//	var javaScript = "";
-//	var version = "v1.0";
-
-	/** Construct the Adtoniq singleton and initialize it
-	 * @param apiKey Your unique API key, obtained from Adtoniq when you register
-	 */
-	constructor(pollURL, pollInterval) {
-	this.javaScript = "";
-	this.version = "v1.0";
-    this.pollURL = pollURL
-    this.pollInterval = pollInterval ? pollInterval : 30000
-    if (!!AdtoniqUA.instance) {
-        return AdtoniqUA.instance;
+    /** Construct the Adtoniq singleton and initialize it
+     * @param apiKey Your unique API key, obtained from Adtoniq when you register
+     */
+    constructor(pollURL, pollInterval) {
+        this.javaScript = "";
+        this.version = "v1.0";
+        this.pollURL = pollURL
+        this.pollInterval = pollInterval ? pollInterval : 30000
+        if (!!AdtoniqUA.instance) {
+            return AdtoniqUA.instance;
+        }
+        AdtoniqUA.instance = this;
+        this.poll(this)
+        setInterval(this.poll, this.pollInterval, this)
     }
-    AdtoniqUA.instance = this;
-		this.poll(this)
-		setInterval(this.poll, this.pollInterval, this)
-	}
 
-	poll(_this) {
-		var request = new XMLHttpRequest();
+    poll(_this) {
+        var request = new XMLHttpRequest();
 
-		try {
-			request.open('GET', _this.pollURL, true);
-			request.send(null);
-			request.onreadystatechange = function () {
-				if (request.readyState === 4 && request.status === 200) {
-					var type = request.getResponseHeader('Content-Type');
-					if (type.indexOf("text") !== 1) {
-						_this.javaScript = request.responseText;
-					}
-				}
-			}
-		} catch (e) {
-			console.log("Error getting code from: " + _this.pollURL);
-		}
-	}
+        try {
+            request.open('GET', _this.pollURL, true);
+            request.send(null);
+            request.onreadystatechange = function () {
+                if (request.readyState === 4 && request.status === 200) {
+                    var type = request.getResponseHeader('Content-Type');
+                    if (type.indexOf("text") !== 1) {
+                        _this.javaScript = request.responseText;
+                    }
+                }
+            }
+        } catch (e) {
+            console.log("Error getting code from: " + _this.pollURL);
+        }
+    }
 
-	/** Returns the HTML that should be inserted into the head section of the website
-	 * @return The code that should be inserted into the head section
-	 */
-	getHeadCode() {
-		return this.javaScript;
-	}
-	
+    /** Returns the HTML that should be inserted into the head section of the website
+     * @return The code that should be inserted into the head section
+     */
+    getHeadCode() {
+        return this.javaScript;
+    }
+
 }
-
